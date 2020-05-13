@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
-           id="cozzbie.plugin.phonecalltrap"
-      version="0.1.3">
+<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0" id="cozzbie.plugin.phonecalltrap" version="0.1.3">
+
     <name>PhoneCallTrap</name>
     <description>A phone call trap</description>
     <license>MIT</license>
-    <keywords>phonegap,calendar, phone, call, phone-call</keywords>
+    <keywords>phonegap, calendar, phone, call, phone-call</keywords>
 
 
     <js-module src="www/PhoneCallTrap.js" name="PhoneCallTrap">
@@ -23,6 +22,7 @@
 
         <config-file target="AndroidManifest.xml" parent="/*">
             <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+            <uses-permission android:name="android.permission.READ_CONTACTS" />
         </config-file>
 
         <source-file src="src/android/PhoneCallTrap.java" target-dir="src/io/cozzbie/phonecalltrap" />
